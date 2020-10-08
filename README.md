@@ -3,13 +3,11 @@ About r-clipr
 
 Home: https://github.com/mdlincoln/clipr
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-clipr-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simple utility functions to read from and write to the Windows, OS X, and X11 clipboards.
-
-
 
 Current build status
 ====================
