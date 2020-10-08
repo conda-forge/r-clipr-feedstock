@@ -35,10 +35,11 @@ test:
 
 about:
   home: https://github.com/mdlincoln/clipr
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Simple utility functions to read from and write to the Windows, OS X, and X11 clipboards.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
