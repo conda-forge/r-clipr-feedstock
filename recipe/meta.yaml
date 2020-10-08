@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/clipr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/clipr/clipr_{{ version }}.tar.gz
-  sha256: 03a4e4b72ec63bd08b53fe62673ffc19a004cc846957a335be2b30d046b8c2e2
+  sha256: ffad477b07847e3b68f7e4406bbd323025a8dae7e3c768943d4d307ee3248afb
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,7 +38,7 @@ about:
   license: GPL-3
   summary: Simple utility functions to read from and write to the Windows, OS X, and X11 clipboards.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
