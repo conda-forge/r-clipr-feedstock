@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/clipr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/clipr/clipr_{{ version }}.tar.gz
-  sha256: ffad477b07847e3b68f7e4406bbd323025a8dae7e3c768943d4d307ee3248afb
+  sha256: 32c2931992fbec9c31b71de3e27059f1cbb45b4b1f45fd42e0e8dbcec6de3be9
 
 build:
   merge_build_host: true  # [win]
